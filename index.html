@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  
+  <link rel="shortcut icon" href="./assets/weatherIcon-47130625.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/index-6a3775f7.css">
+</head>
+
+<body class="bg-purple-200">
+  <div class="title font-semibold text-slate-200 hover:text-amber-500 text-center p-5 text-4xl bg-purple-700 w-screen">
+    Weather App
+  </div>
+  <div class="container flex flex-col items-center space-y-7 pt-10 h-screen">
+    <div class="flex space-x-5 w-full justify-center items-center">
+      <input type="text" placeholder="Search..." class="w-52 h-10 border-2 px-2 rounded-lg" id="searchInput" />
+      <button class="btn p-2 w-16" id="searchBtn">Search</button>
+    </div>
+    <div class="data flex flex-col items-center space-y-5  font-mono">
+      <div id="name"></div>
+      <div class="weather flex items-center space-x-2">
+        <span class="text-4xl" id="weather"></span> 
+        <span id="weatherIcon"></span>
+      </div>
+      <span id="temperature"></span>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
